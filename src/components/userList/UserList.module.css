@@ -2,8 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start; /* 🔑 Prevents vertical stretching */
-    gap: 16px;
+    align-items: flex-start;  
     padding: 20px;
   }
   

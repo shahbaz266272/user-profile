@@ -1,0 +1,88 @@
+.card {
+  position: relative;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 300px;
+  height: 100%;  
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  flex: 1 1 250px;
+  overflow: hidden;
+  min-height: 350px;
+  max-height: 400px;
+}
+ 
+.avatar {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 120px;
+  margin: 0 auto 12px;
+  display: block;
+}
+
+.email {
+  color: var(--secondary-color);
+  font-size: 0.9em;
+}
+
+.bio {
+  font-size: 0.95em;
+  margin: 8px 0;
+ }
+
+.button {
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 10px;
+  z-index: 1;
+  position: relative;
+  margin-top: auto;
+}
+
+.detailsOverlay {
+  position: absolute;
+  inset: 0;  
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  padding: 16px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  animation: fadeIn 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  text-align: left;         
+
+
+}
+
+.closeButton {
+  align-self: flex-end;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: var(--text-color);
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

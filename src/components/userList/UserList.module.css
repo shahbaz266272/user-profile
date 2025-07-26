@@ -1,0 +1,21 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* 🔑 Prevents vertical stretching */
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  
+  .search {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  

@@ -42,12 +42,9 @@ body {
   cursor: pointer;
 }
 .toggle:hover {
-  box-shadow: 0 4px 12px rgba(243, 242, 242, 0.1);  
-  background: #2f68a5;
-  box-shadow: 0 4px 12px var(--shadow-color);  
-
-  transition: background-color 0.3s, color 0.3s;
-}
+    box-shadow: 0 4px 12px var(--shadow-color);  
+    transition: all 0.3s ease-in-out;
+  }
 .themeToggle {
   display: flex;
   justify-content: end;

@@ -12,7 +12,7 @@ const UserProfileCard: React.FC<Props> = ({ user, isExpanded, onToggle }) => {
   return (
     <div className={styles.card}>
       <img src={user.profilePic} alt={user.name} className={styles.avatar} />
-      <h2>{user.name}</h2>
+      <h2 className={styles.title}>{user.name}</h2>
       <p className={styles.email}>{user.email}</p>
       <p className={styles.bio}>{user.bio}</p>
 
